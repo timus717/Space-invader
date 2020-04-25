@@ -1,7 +1,6 @@
+"""modules"""
 import pygame
 import math
-
-
 pygame.mixer.init()
 from pygame.locals import *
 import random
@@ -229,7 +228,7 @@ def set_underlinetoabout():
 def start_text():
     """This function contain the real game"""
     # infinite loop for game
-
+    """imortant variables for game loop"""
     playerx = 290  # initial x position of player
     playery = 500 - 64 - 5  # initial y position of player
     bkg = pygame.image.load("background.png").convert()  # background image 1
