@@ -1,6 +1,6 @@
 import pygame
 import math
-import time
+
 
 pygame.mixer.init()
 from pygame.locals import *
@@ -434,7 +434,7 @@ def player_died(enemyy, enemyx, playery, playerx, enemy_rect):
 
 def collide_bullet(enemyx, enemyy, bullety, bulletx, rect_enemy):
     """This functions checks if bullet collide with enemies or not"""
-    # distance=math.sqrt(math.pow(enemyx-bulletx,2)+math.pow(enemyy-bullety,2))
+    
     pos = bulletx, bullety_change
     if rect_enemy.collidepoint(pos):
         return True
